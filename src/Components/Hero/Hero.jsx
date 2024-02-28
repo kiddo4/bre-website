@@ -21,6 +21,10 @@ const Hero = ({setPlatStatus,heroData,heroCount,playStatus,setHeroCount}) => {
           <li onClick={()=> setHeroCount(2)}  className={heroCount===2?'hero-dot orange':'hero-dot'}></li>
 
         </ul>
+        <div className="hero-play">
+          <img src={playStatus?pause_icon:play_icon} alt="" />
+          <p>See the video</p>
+        </div>
       </div>
     </div>
   )
