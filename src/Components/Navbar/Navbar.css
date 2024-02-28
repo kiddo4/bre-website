@@ -1,25 +1,48 @@
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 120px;
+    margin: 20px 20px; /* Adjust margin for mobile */
     color: white;
 }
-.nav-logo{
+
+.nav-logo {
     font-family: Outfit;
-    font-size: 42px;
+    font-size: 28px; /* Adjust font size for mobile */
     font-weight: 500;
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 90px;
-    font-size: 18px;
+    gap: 20px; /* Adjust gap for mobile */
+    font-size: 16px; /* Adjust font size for mobile */
 }
-.nav-contact{
+
+.nav-contact {
     border-radius: 50px;
-    padding: 10px 38px;
+    padding: 8px 20px; /* Adjust padding for mobile */
     background: #fff;
     color: #262626;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .nav {
+        margin: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .nav-logo {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .nav-menu {
+        gap: 15px; /* Adjust gap for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .nav-contact {
+        padding: 6px 16px; /* Adjust padding for smaller screens */
+    }
 }

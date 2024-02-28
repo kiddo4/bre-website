@@ -1,57 +1,96 @@
-.hero{
-    margin: 0px 120px;
-    margin-top: 270px;
+.hero {
+    margin: 0 20px; /* Adjust margin for mobile */
+    margin-top: 170px; /* Adjust margin-top for mobile */
 }
-.hero-text{
+
+.hero-text {
     color: #fff;
-    font-size: 100px;
+    font-size: 48px; /* Adjust font size for mobile */
     font-weight: 500;
-    line-height: 130px;
+    line-height: 60px; /* Adjust line-height for mobile */
 }
-.hero-explore{
+
+.hero-explore {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 20px; /* Adjust gap for mobile */
     width: fit-content;
-    margin-top: 70px;
+    margin-top: 50px; /* Adjust margin-top for mobile */
     padding: 5px 8px;
-    padding-left: 30px;
-    border-radius: 60px;
+    padding-left: 20px; /* Adjust padding-left for mobile */
+    border-radius: 40px; /* Adjust border-radius for mobile */
     background-color: white;
     cursor: pointer;
 }
-.hero-explore p{
+
+.hero-explore p {
     color: #292929;
-    font-size: 20px;
+    font-size: 16px; /* Adjust font size for mobile */
     font-weight: 500;
 }
-.hero-dot-play{
-    margin-top: 120px;
+
+.hero-dot-play {
+    margin-top: 80px; /* Adjust margin-top for mobile */
     display: flex;
     justify-content: space-between;
 }
-.hero-dots{
+
+.hero-dots {
     display: flex;
-    gap: 23px;
+    gap: 10px; /* Adjust gap for mobile */
     align-items: center;
     list-style: none;
 }
-.hero-dot{
-    width: 15px;
-    height: 15px;
-    border-radius: 7.5px;
+
+.hero-dot {
+    width: 10px; /* Adjust width for mobile */
+    height: 10px; /* Adjust height for mobile */
+    border-radius: 5px; /* Adjust border-radius for mobile */
     background: #fff;
     cursor: pointer;
 }
-.hero-dot.orange{
+
+.hero-dot.orange {
     background: orangered;
 }
-.hero-play{
+
+.hero-play {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px; /* Adjust gap for mobile */
 }
-.hero-play p{
+
+.hero-play p {
     color: #fff;
-    font-size: 19px;
+    font-size: 16px; /* Adjust font size for mobile */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .hero {
+        margin-top: 120px; /* Adjust margin-top for smaller screens */
+    }
+    .hero-text {
+        font-size: 36px; /* Adjust font size for smaller screens */
+        line-height: 48px; /* Adjust line-height for smaller screens */
+    }
+    .hero-explore {
+        gap: 15px; /* Adjust gap for smaller screens */
+        padding-left: 15px; /* Adjust padding-left for smaller screens */
+        border-radius: 30px; /* Adjust border-radius for smaller screens */
+    }
+    .hero-explore p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    .hero-dot-play {
+        margin-top: 60px; /* Adjust margin-top for smaller screens */
+    }
+    .hero-dot {
+        width: 8px; /* Adjust width for smaller screens */
+        height: 8px; /* Adjust height for smaller screens */
+        border-radius: 4px; /* Adjust border-radius for smaller screens */
+    }
+    .hero-play p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
 }
