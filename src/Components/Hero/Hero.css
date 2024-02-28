@@ -36,14 +36,22 @@
     align-items: center;
     list-style: none;
 }
-.hero-dot{
+.hero-dot{font-size: ;
     width: 15px;
     height: 15px;
     border-radius: 7.5px;
     background: #fff;
     cursor: pointer;
 }
-
 .hero-dot.orange{
     background: orangered;
+}
+.hero-play{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.hero-play p{
+    color: #fff;
+    font-size: 19px;
 }
