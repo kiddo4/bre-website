@@ -30,3 +30,16 @@
     display: flex;
     justify-content: space-between;
 }
+.hero-dots{
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    list-style: none;
+}
+.hero-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    background: #fff;
+    cursor: pointer;
+}
