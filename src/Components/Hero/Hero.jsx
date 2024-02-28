@@ -3,7 +3,7 @@ import arrow_btn from '../../assets/arrow_btn.png'
 import play_icon from '../../assets/play_icon.png'
 import pause_icon from '../../assets/pause_icon.png'
 
-const Hero = ({setPlatStatus,heroData,heroCount,playStatus,setHeroCount}) => {
+const Hero = ({setPlayStatus,heroData,heroCount,playStatus,setHeroCount}) => {
   return (
     <div className='hero'>
       <div className="hero-text">
@@ -22,7 +22,7 @@ const Hero = ({setPlatStatus,heroData,heroCount,playStatus,setHeroCount}) => {
 
         </ul>
         <div className="hero-play">
-          <img src={playStatus?pause_icon:play_icon} alt="" />
+          <img onClick={()=>setPlayStatus(!playStatus)} src={playStatus?pause_icon:play_icon} alt="" />
           <p>See the video</p>
         </div>
       </div>
