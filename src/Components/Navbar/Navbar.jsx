@@ -4,7 +4,7 @@ import './Navbar.css'
 const Navbar = () => {
   return (
     <div className='nav'>
-      <div className="nav-logo">BRE-evolution</div>
+      <div className="nav-logo">BRE-evolute</div>
       <ul className="nav-menu">
         <li>Home</li>
         <li>Explore</li>
